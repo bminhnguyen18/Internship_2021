@@ -10,6 +10,7 @@ body {
 .container {
     width: 1080px;
     margin: 0 auto;
+    /* overflow: hidden; */
 }
 
 a {
@@ -66,7 +67,7 @@ a#get_quote {
     /* width: 50%; */
     float: right;
     clear: both;
-    margin: 8px 89px 0 0;
+    margin: 5px 90px 0 0;
     color: #41362f;
     border: 1px solid #41362f;
     padding: 5px 3px 0 0;
@@ -91,47 +92,145 @@ a#get_quote {
     border: none;
     background: #41362f;
     color: #ffffff;
-    padding: 4px 4px 4px 5px;
-    margin: -5px -4px 0 17px;
+    padding: 4px 4px 5px 5px;
+    margin: -5px -4px -1px 17px;
 }
 
-.search p { 
+.search p {
     /* width: 80%; */
     float: left;
     /* overflow: hidden; */
     clear: both;
-    margin: -3px 0px 0 4px;
+    margin: -3px 0px -3px 4px;
 }
 
-
-
-
-
 /* xxxxxxxxxx End big part: setting header xxxxxxxxxx */
-
 
 /* ********** Start big part: setting navigation_bar ********** */
 
 .cover_navigation_bar {
     background-color: #41362f;
     overflow: hidden;
-    max-height: 162 px;
+    /* height: 162 px; */
     color: #ffffff;
 }
 
-.cover_navigation_bar a {
+.cover_navigation_bar ul.sub_navigation {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    float: left;
+    margin: 0 0 0 -7px;
+}
+
+.cover_navigation_bar ul.sub_navigation li {
+    float: left;
+    /* margin-top: 38px; */
+    margin: 12px 3px 4px 0px;
+    border-left: 1px solid #ffffff;
+}
+
+.cover_navigation_bar ul.sub_navigation li a {
     color: #ffffff;
     /* text-decoration: none; */
+    display: inline-block;
+    text-align: center;
+    font-size: 100%;
+    font-family: arial;
+    text-transform: uppercase;
+    padding: 10px 60px 15px 65px;
 }
 
+.sub_unactive {
+    /* margin-left: 3px; */
+    /* margin-right: 13px; */
+    /* padding: 0px 12px 8px 0px; */
+    margin-left: 3px;
+    /* border-bottom: 3px solid; */
+}
+
+div#sub_active {
+    border-bottom: 3px solid;
+}
+
+
 /* xxxxxxxxxx End big part: setting navigation_bar xxxxxxxxxx */
+
+.pastel_line {
+    height: 8px;
+    background-color:#eee5dc;
+}
+
+
+/* ********** Start big part: setting main_body ********** */
+
+
+/* ---------- Start small part: setting page_address ---------- */
+
+.cover_content .content .page_address {
+    margin: 11px 0 0 -7px;
+}
+
+.cover_content .content .page_address a {
+    font-size: 81.25%;
+}
+
+.cover_content .content .page_address a.now {
+    color: black;
+}
+
+.cover_content .content .page_address a.number_address {
+    color: #1a5ca0;
+    text-decoration-line: underline;
+}
+
+/* ========== End small part: setting page_address ========== */
+
+
+/* ---------- Start small part: setting portfolio ---------- */
+
+.cover_content .content {
+    width: 65%;
+    float: left;
+    clear: both;
+}
+
+.cover_content .content .portfolio {
+    background-color: #41362f;
+    border: 12px double white;
+    margin: 14px 36px 0 -11px;
+}
+
+.cover_content .content .portfolio h2 {
+    color: #ffffff;
+    font-size: 162.5%;
+    padding: 26px 0 20px 21px;
+}
+
+/* ========== End small part: setting portfolio ========== */
+
+
+/* ---------- Start small part: side_bar ---------- */
+
+.side_bar {
+    width: 35%;
+    float: right;
+    /* clear: both; */
+}
+
+/* ========== End small part: side_bar ========== */
+
+
+/* xxxxxxxxxx End big part: setting main_body xxxxxxxxxx */
 
 
 /* ====================
 setting after
 ==================== */
 
-.container:after {
+.container:after,
+.cover_navigation_bar:after {
     content: '';
     display: table;
     clear: both;
