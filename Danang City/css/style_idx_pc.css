@@ -1,1 +1,142 @@
 *{}
+
+/* setting body */
+body {
+    font-size: 16px;
+    font-family: "Meiryo", "メイリオ","sans-serif";
+    background-color: #ffffff;
+}
+
+.container {
+    width: 1080px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* @font-face{
+    font-family: 'MyriadPro-Cond';
+    src: url(../font/MyriadPro-Cond.otf)
+} */
+
+
+/* ********** Start big part: setting header ********** */
+
+.cover_header {
+    overflow: hidden;
+    max-height: 162 px;
+}
+
+.header .quote_search {
+    width: 50%;
+    float: right;
+    padding-right: 95px;
+}
+
+.header .logo {
+    width: 50%;
+    float: left;
+}
+
+.header .logo h1 {
+    padding-top: 2px;
+    padding-bottom: 26px;
+}
+
+.header .quote_search .quote {
+    /* width: 50%; */
+    float: right;
+    clear: both;
+    margin: -2px 239px 0 0;
+}
+
+.header .quote_search .quote a {
+    color:#41362f;
+}
+
+a#get_quote {
+    font-size: 75%;
+    font-family: arial;
+    font-weight: 500;
+}
+
+.header .quote_search .search {
+    /* width: 50%; */
+    float: right;
+    clear: both;
+    margin: 8px 89px 0 0;
+    color: #41362f;
+    border: 1px solid #41362f;
+    padding: 5px 3px 0 0;
+}
+
+.header .quote_search .search input[type="text"] {
+    border: none;
+}
+
+.header .quote_search i.fas.fa-search {
+    font-size: 114%;
+}
+
+.header .quote_search input[type="text"] {
+    font-size: 75%;
+    margin: -5px -8px 0 0px;
+}
+
+.search button {
+    /* width: 10%; */
+    float: right;
+    border: none;
+    background: #41362f;
+    color: #ffffff;
+    padding: 4px 4px 4px 5px;
+    margin: -5px -4px 0 17px;
+}
+
+.search p { 
+    /* width: 80%; */
+    float: left;
+    /* overflow: hidden; */
+    clear: both;
+    margin: -3px 0px 0 4px;
+}
+
+
+
+
+
+/* xxxxxxxxxx End big part: setting header xxxxxxxxxx */
+
+
+/* ********** Start big part: setting navigation_bar ********** */
+
+.cover_navigation_bar {
+    background-color: #41362f;
+    overflow: hidden;
+    max-height: 162 px;
+    color: #ffffff;
+}
+
+.cover_navigation_bar a {
+    color: #ffffff;
+    /* text-decoration: none; */
+}
+
+/* xxxxxxxxxx End big part: setting navigation_bar xxxxxxxxxx */
+
+
+/* ====================
+setting after
+==================== */
+
+.container:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/* ====================
+end setting after
+==================== */
