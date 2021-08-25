@@ -191,7 +191,7 @@ div#sub_active {
 /* ---------- Start small part: setting portfolio ---------- */
 
 .cover_content .content {
-    width: 65%;
+    width: 63%;
     float: left;
     clear: both;
 }
@@ -199,7 +199,7 @@ div#sub_active {
 .cover_content .content .portfolio {
     background-color: #41362f;
     border: 12px double white;
-    margin: 14px 36px 0 -11px;
+    margin: 14px 16px 0 -11px;
 }
 
 .cover_content .content .portfolio h2 {
@@ -208,15 +208,93 @@ div#sub_active {
     padding: 26px 0 20px 21px;
 }
 
+.cover_content .content_items {
+    padding-bottom: 127px;
+}
+
+.cover_content .one_item {
+    width: 47.7%;
+    margin-left: -6px;
+    border: 1px solid black;
+    margin-top: 46px;
+    margin-bottom: -30px;
+}
+
+.cover_content .one_item:nth-child(odd) {
+    float: left;
+}
+
+.cover_content .one_item:nth-child(even) {
+    float: right;
+    margin-right: 21px;
+}
+
+.cover_content .one_item:nth-last-child(-n+2) .item_detail p {
+    padding-bottom: 34px;
+}
+
+.cover_content .one_item .item_title {
+    border: 1px solid black;
+    background-color: #41362f;
+}
+
+.cover_content .one_item .item_title h3 {
+    float: left;
+    /* display: inline-block; */
+    /* clear: left; */
+    width: 96%;
+    font-size: 81.25%;
+    padding: 14px 0 13px 13px;
+    background-color: #eee5dc;
+}
+
+.cover_content .one_item .item_title a {
+    float: right;
+    /* display: inline-block; */
+    width: 4%;
+    color: #ffffff;
+    margin: 15px -6px 0 0px;
+    font-size: 75%;
+}
+
+.cover_content .one_item .item_detail p {
+    font-size: 14px;
+    padding: 11px 0 13px 13px;
+}
+
 /* ========== End small part: setting portfolio ========== */
 
 
 /* ---------- Start small part: side_bar ---------- */
 
 .side_bar {
-    width: 35%;
+    width: 37%;
     float: right;
     /* clear: both; */
+}
+
+.cover_content .side_bar .one_side_item {
+    border: 1px solid black;
+    background-color: #41362f;
+}
+
+.cover_content .side_bar .one_side_item h4 {
+    float: left;
+    /* display: inline-block; */
+    /* clear: left; */
+    width: 96%;
+    font-size: 81.25%;
+    padding: 14px 0 13px 13px;
+    background-color: #ffffff;
+}
+
+.cover_content .side_bar .one_side_item i.fas.fa-caret-right {
+    float: right;
+    /* display: inline-block; */
+    width: 4%;
+    color: #ffffff;
+    margin: 15px -6px 0 0px;
+    font-size: 75%;
 }
 
 /* ========== End small part: side_bar ========== */
@@ -225,10 +303,25 @@ div#sub_active {
 /* xxxxxxxxxx End big part: setting main_body xxxxxxxxxx */
 
 
+/* ********** Start big part: setting more ********** */
+
+.more {
+    width: 100%;
+    display: inline-block;
+}
+
+
+/* xxxxxxxxxx End big part: setting more xxxxxxxxxx */
+
+
 /* ====================
 setting after
 ==================== */
 
+.more:after,
+.one_side_item:after,
+.content_items:after,
+.item_title:after,
 .container:after,
 .cover_navigation_bar:after {
     content: '';
