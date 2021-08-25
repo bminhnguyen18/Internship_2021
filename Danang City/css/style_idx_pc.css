@@ -17,6 +17,15 @@ a {
     text-decoration: none;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+li {
+    list-style: none;
+}
+
 /* @font-face{
     font-family: 'MyriadPro-Cond';
     src: url(../font/MyriadPro-Cond.otf)
@@ -209,7 +218,7 @@ div#sub_active {
 }
 
 .cover_content .content_items {
-    padding-bottom: 127px;
+    padding-bottom: 50px;
 }
 
 .cover_content .one_item {
@@ -268,14 +277,18 @@ div#sub_active {
 /* ---------- Start small part: side_bar ---------- */
 
 .side_bar {
-    width: 37%;
-    float: right;
+    width: 18.5%;
+    float: left;
     /* clear: both; */
+    margin: 53px 0 0 15px;
+    padding-bottom: 13px;
+    background-color: #eee5dc;
 }
 
 .cover_content .side_bar .one_side_item {
     border: 1px solid black;
     background-color: #41362f;
+    margin: 9px 10px -4px 7px;;
 }
 
 .cover_content .side_bar .one_side_item h4 {
@@ -284,8 +297,27 @@ div#sub_active {
     /* clear: left; */
     width: 96%;
     font-size: 81.25%;
-    padding: 14px 0 13px 13px;
+    padding: 14px 0 9px 13px;
     background-color: #ffffff;
+}
+
+.cover_content .side_bar .one_side_item p {
+    display: inline-block;
+    font-size: 14px;
+    color: #41362f;
+    text-align: center;
+    font-weight: 600;
+    margin: -8px -1px 1px 0;
+    line-height: 20px;
+}
+
+.cover_content .side_bar .one_side_item p.detail {
+    padding: 0 0 0 11px;
+}
+
+.cover_content .side_bar .one_side_item p img {
+    max-width: 93%;
+    margin: 6px 0 0 -5px;
 }
 
 .cover_content .side_bar .one_side_item i.fas.fa-caret-right {
@@ -293,11 +325,23 @@ div#sub_active {
     /* display: inline-block; */
     width: 4%;
     color: #ffffff;
-    margin: 15px -6px 0 0px;
+    margin: 22px -3px 0 0;
     font-size: 75%;
 }
 
 /* ========== End small part: side_bar ========== */
+
+
+/* ---------- Start small part: setting back_to_top ---------- */
+
+.cover_content .back_to_top_button {
+    /* display: inline-block; */
+    /* float: left; */
+    clear: both;
+}
+
+/* ========== End small part: setting back_to_top ========== */
+
 
 
 /* xxxxxxxxxx End big part: setting main_body xxxxxxxxxx */
@@ -308,6 +352,15 @@ div#sub_active {
 .more {
     width: 100%;
     display: inline-block;
+}
+
+i.fas.fa-sort-up {
+    padding: 16px 14px 0px 14px;
+    background-color: #41362f;
+    float: right;
+    color: #ffffff;
+    font-size: 37px;
+    margin: 5px 185px 0 0;
 }
 
 
