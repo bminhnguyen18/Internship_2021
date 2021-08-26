@@ -6,8 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Da Nang City</title>
     <link rel="stylesheet" href="css/style_idx_pc.css">
+    <link rel="stylesheet" type="text/css" href="css/style_idx_pc_responsive.css">
     <link rel="stylesheet" href="css/reset.css">
     <script src="https://kit.fontawesome.com/5c9aa3de1e.js" crossorigin="anonymous"></script>
+
+    <!-- add jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <!-- end add jquery -->
+
 </head>
 <body>
     <div class="page_cover">
@@ -188,9 +198,10 @@
 
                 </div>
                 <!-- end side_bar -->
-                <div class="back_to_top_button">
-                    <a href="#"><i class="fas fa-sort-up"></i></a>
-                </div>
+                <!-- <div class="back_to_top_button"> -->
+                    <!-- <a href="#"><i class="fas fa-sort-up"></i></a> -->
+                    <button id="myBtn" title="Go to top"><i class="fas fa-sort-up"></i></button>
+                <!-- </div> -->
                 <!-- end back_to_top_button -->
             <!-- ========== End small part: cover_content ========== -->
             </div>            <!-- end container -->
@@ -257,5 +268,51 @@
 
     </div>
     <!-- end page_cover -->
+
+
+<!-- ********** Start big part: setting js back to top ********** -->
+
+<script>
+    //Khi người dùng cuộn chuột thì gọi hàm scrollFunction
+    window.onscroll = function() {scrollFunction()};
+    // khai báo hàm scrollFunction
+    var a=300;
+    function scrollFunction()
+        {
+            vitrihientai = $(window).scrollTop();
+        console.log(vitrihientai);
+            // Kiểm tra vị trí hiện tại của con trỏ so với nội dung trang
+            if (document.body.scrollTop > 100 && a>=vitrihientai || document.documentElement.scrollTop > 100 && a>=vitrihientai)
+                {
+                    //nếu lớn hơn 100px thì hiện button
+                    document.getElementById("myBtn").style.display = "block";
+                    a=vitrihientai;
+                }
+            else
+                {
+                    //nếu nhỏ hơn 100px thì ẩn button
+                    document.getElementById("myBtn").style.display = "none";
+                    a=vitrihientai;
+                }
+        }
+    //gán sự kiện click cho button
+    document.getElementById('myBtn').addEventListener("click", function()
+        {
+            //Nếu button được click thì nhảy về đầu trang
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        });
+    $(window).scroll(function()
+        {
+            if($(window).scrollTop() + $(window).height() == $(document).height())
+                {
+                    document.getElementById("myBtn").style.display = "block";
+                }
+        });
+</script>
+
+<!-- xxxxxxxxxx End big part: setting js back to top xxxxxxxxxx -->
+
+    
 </body>
 </html>
