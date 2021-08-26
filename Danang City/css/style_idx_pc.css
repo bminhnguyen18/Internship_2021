@@ -140,6 +140,11 @@ a#get_quote {
     border-left: 1px solid #ffffff;
 }
 
+.cover_navigation_bar ul.sub_navigation li :hover {
+    background: #ffffff;
+    color: black;
+}
+
 .cover_navigation_bar ul.sub_navigation li a {
     color: #ffffff;
     /* text-decoration: none; */
@@ -266,6 +271,11 @@ div#sub_active {
     font-size: 75%;
 }
 
+.cover_content .one_item .item_title :hover {
+    background-color: black;
+    color: #ffffff;
+}
+
 .cover_content .one_item .item_detail p {
     font-size: 14px;
     padding: 11px 0 13px 13px;
@@ -329,6 +339,12 @@ div#sub_active {
     font-size: 75%;
 }
 
+.cover_content .side_bar .one_side_item :hover {
+    background: black;
+    color: #ffffff;
+}
+
+
 /* ========== End small part: side_bar ========== */
 
 
@@ -340,18 +356,9 @@ div#sub_active {
     clear: both;
 }
 
-/* ========== End small part: setting back_to_top ========== */
-
-
-
-/* xxxxxxxxxx End big part: setting main_body xxxxxxxxxx */
-
-
-/* ********** Start big part: setting more ********** */
-
-.more {
-    width: 100%;
-    display: inline-block;
+.cover_content .back_to_top_button :hover {
+    background: rgb(255, 251, 0);
+    color: black;
 }
 
 i.fas.fa-sort-up {
@@ -363,14 +370,123 @@ i.fas.fa-sort-up {
     margin: 5px 185px 0 0;
 }
 
+/* ========== End small part: setting back_to_top ========== */
+
+
+
+/* xxxxxxxxxx End big part: setting main_body xxxxxxxxxx */
+
+
+/* ********** Start big part: setting more ********** */
+
+.cover_more {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    margin: 22px 0 0 0;
+}
+
+.cover_more .more {
+    width: 100%;
+    display: inline-block;
+    margin: 9px 0 9px 136px;
+}
+
+.cover_more .more a {
+    font-size: 13px;
+    color: #41362f;
+    margin: 0 64px 0 0;
+}
+
+.cover_more .more i.fas.fa-chevron-circle-right {
+    padding-right: 6px;
+}
 
 /* xxxxxxxxxx End big part: setting more xxxxxxxxxx */
+
+
+/* ********** Start big part: setting footer ********** */
+
+
+/* ---------- Start small part: setting contact ---------- */
+
+.cover_contact .address {
+    width: 20.5%;
+    float: left;
+    clear: both;
+    border-right: 1px solid black;
+    margin: 20px 0 0 -14px;
+}
+
+.cover_contact .address p {
+    font-size: 13px;
+    margin: 3px 0 0 -6px;
+}
+
+.cover_contact .subscribe {
+    width: 79.5%;
+    float: right;
+    margin: 29px -52px 0 0;
+}
+
+.cover_contact .subscribe h5 {
+    font-weight: bolder;
+    font-size: 15px;
+}
+
+.cover_contact .subscribe p {
+    font-size: 12px;
+}
+
+.cover_contact .subscribe p.phone {
+    margin: 10px 0 0 0;
+    width: 19%;
+    float: left;
+}
+
+.cover_contact .subscribe p.email {
+    margin: 10px 0 0 0;
+    width: 81%;
+    float: right;
+}
+
+.cover_contact .subscribe p.email a{
+    color: #597aa8;
+}
+
+/* ========== End small part: setting contact ========== */
+
+
+/* ---------- Start small part: copyright ---------- */
+
+.cover_copyright {
+    background-color: #41362f;
+    color: #ffffff;
+    font-size: 11px;
+    /* text-align: center; */
+    margin: 20px 0 0 0;
+}
+
+.cover_copyright p {
+    text-align: center;
+    padding: 4px 0 0 0px;
+    margin: 0 0 0 -194px;
+}
+
+/* ========== End small part: copyright ========== */
+
+
+/* xxxxxxxxxx End big part: setting footer xxxxxxxxxx */
+
 
 
 /* ====================
 setting after
 ==================== */
 
+/* .main_body:after, */
+.back_to_top_button:after,
+.contact:after,
+.subscribe:after,
 .more:after,
 .one_side_item:after,
 .content_items:after,
