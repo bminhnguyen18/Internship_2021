@@ -1,0 +1,487 @@
+*{}
+
+/* setting body */
+body {
+    font-size: 16px;
+    font-family: "Meiryo", "メイリオ","sans-serif";
+    background-color: #ffffff;
+}
+
+.container {
+    width: 1080px;
+    margin: 0 auto;
+    /* overflow: hidden; */
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+li {
+    list-style: none;
+}
+
+/* @font-face{
+    font-family: 'MyriadPro-Cond';
+    src: url(../font/MyriadPro-Cond.otf)
+} */
+
+
+/* ********** Start big part: setting header ********** */
+
+.cover_header {
+    overflow: hidden;
+    max-height: 162 px;
+}
+
+.header .quote_search {
+    width: 50%;
+    float: right;
+    padding-right: 95px;
+}
+
+.header .logo {
+    width: 50%;
+    float: left;
+}
+
+.header .logo h1 {
+    padding-top: 2px;
+    padding-bottom: 26px;
+}
+
+.header .quote_search .quote {
+    /* width: 50%; */
+    float: right;
+    clear: both;
+    margin: -2px 239px 0 0;
+}
+
+.header .quote_search .quote a {
+    color:#41362f;
+}
+
+a#get_quote {
+    font-size: 75%;
+    font-family: arial;
+    font-weight: 500;
+}
+
+.header .quote_search .search {
+    /* width: 50%; */
+    float: right;
+    clear: both;
+    margin: 5px 90px 0 0;
+    color: #41362f;
+    border: 1px solid #41362f;
+    padding: 5px 3px 0 0;
+}
+
+.header .quote_search .search input[type="text"] {
+    border: none;
+}
+
+.header .quote_search i.fas.fa-search {
+    font-size: 114%;
+}
+
+.header .quote_search input[type="text"] {
+    font-size: 75%;
+    margin: -5px -8px 0 0px;
+}
+
+.search button {
+    /* width: 10%; */
+    float: right;
+    border: none;
+    background: #41362f;
+    color: #ffffff;
+    padding: 4px 4px 5px 5px;
+    margin: -5px -4px -1px 17px;
+}
+
+.search p {
+    /* width: 80%; */
+    float: left;
+    /* overflow: hidden; */
+    clear: both;
+    margin: -3px 0px -3px 4px;
+}
+
+/* xxxxxxxxxx End big part: setting header xxxxxxxxxx */
+
+/* ********** Start big part: setting navigation_bar ********** */
+
+.cover_navigation_bar {
+    background-color: #41362f;
+    overflow: hidden;
+    /* height: 162 px; */
+    color: #ffffff;
+}
+
+.cover_navigation_bar ul.sub_navigation {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    float: left;
+    margin: 0 0 0 -7px;
+}
+
+.cover_navigation_bar ul.sub_navigation li {
+    float: left;
+    /* margin-top: 38px; */
+    margin: 12px 3px 4px 0px;
+    border-left: 1px solid #ffffff;
+}
+
+.cover_navigation_bar ul.sub_navigation li :hover {
+    background: #ffffff;
+    color: black;
+}
+
+.cover_navigation_bar ul.sub_navigation li a {
+    color: #ffffff;
+    /* text-decoration: none; */
+    display: inline-block;
+    text-align: center;
+    font-size: 100%;
+    font-family: arial;
+    text-transform: uppercase;
+    padding: 10px 60px 15px 65px;
+}
+
+.sub_unactive {
+    /* margin-left: 3px; */
+    /* margin-right: 13px; */
+    /* padding: 0px 12px 8px 0px; */
+    margin-left: 3px;
+    /* border-bottom: 3px solid; */
+}
+
+div#sub_active {
+    border-bottom: 3px solid;
+}
+
+
+/* xxxxxxxxxx End big part: setting navigation_bar xxxxxxxxxx */
+
+.pastel_line {
+    height: 8px;
+    background-color:#eee5dc;
+}
+
+
+/* ********** Start big part: setting main_body ********** */
+
+/* ---------- Start small part: setting portfolio ---------- */
+
+.cover_content .content {
+    width: 63%;
+    float: left;
+    clear: both;
+}
+
+.cover_content .content_items {
+    padding-bottom: 50px;
+}
+
+.cover_content .one_item {
+    width: 47.7%;
+    margin-left: -6px;
+    border: 1px solid black;
+    margin-top: 46px;
+    margin-bottom: -30px;
+}
+
+.cover_content .one_item:nth-child(odd) {
+    float: left;
+}
+
+.cover_content .one_item:nth-child(even) {
+    float: right;
+    margin-right: 21px;
+}
+
+.cover_content .one_item:nth-last-child(-n+2) .item_detail p {
+    padding-bottom: 34px;
+}
+
+.cover_content .one_item .item_title {
+    border: 1px solid black;
+    background-color: #41362f;
+}
+
+.cover_content .one_item .item_title h4 {
+    float: left;
+    /* display: inline-block; */
+    /* clear: left; */
+    width: 96%;
+    font-size: 81.25%;
+    padding: 14px 0 13px 13px;
+    background-color: #eee5dc;
+}
+
+.cover_content .one_item .item_title a {
+    float: right;
+    /* display: inline-block; */
+    width: 4%;
+    color: #ffffff;
+    margin: 15px -6px 0 0px;
+    font-size: 75%;
+}
+
+.cover_content .one_item .item_title :hover {
+    background-color: black;
+    color: #ffffff;
+}
+
+.cover_content .one_item .item_detail p {
+    font-size: 87.5%;
+    padding: 11px 0 13px 13px;
+}
+
+/* ========== End small part: setting portfolio ========== */
+
+
+/* ---------- Start small part: side_bar ---------- */
+
+.side_bar {
+    width: 18.5%;
+    float: left;
+    /* clear: both; */
+    margin: 53px 0 0 15px;
+    padding-bottom: 13px;
+    background-color: #eee5dc;
+}
+
+.cover_content .side_bar .one_side_item {
+    border: 1px solid black;
+    background-color: #41362f;
+    margin: 9px 10px -4px 7px;;
+}
+
+.cover_content .side_bar .one_side_item h4 {
+    float: left;
+    /* display: inline-block; */
+    /* clear: left; */
+    width: 96%;
+    font-size: 81.25%;
+    padding: 14px 0 9px 13px;
+    background-color: #ffffff;
+}
+
+.cover_content .side_bar .one_side_item p {
+    display: inline-block;
+    font-size: 87.5%;
+    color: #41362f;
+    text-align: center;
+    font-weight: 600;
+    margin: -8px -1px 1px 0;
+    line-height: 20px;
+}
+
+.cover_content .side_bar .one_side_item p.detail {
+    padding: 0 0 0 11px;
+}
+
+.cover_content .side_bar .one_side_item p img {
+    max-width: 93%;
+    margin: 6px 0 0 -5px;
+}
+
+.cover_content .side_bar .one_side_item i.fas.fa-caret-right {
+    float: right;
+    /* display: inline-block; */
+    width: 4%;
+    color: #ffffff;
+    margin: 22px -3px 0 0;
+    font-size: 75%;
+}
+
+.cover_content .side_bar .one_side_item :hover {
+    background: black;
+    color: #ffffff;
+}
+
+
+/* ========== End small part: side_bar ========== */
+
+
+/* ---------- Start small part: setting back_to_top ---------- */
+
+.cover_content .back_to_top_button {
+    /* display: inline-block; */
+    /* float: left; */
+    clear: both;
+}
+
+.cover_content .back_to_top_button :hover {
+    background: rgb(255, 251, 0);
+    color: black;
+}
+
+i.fas.fa-sort-up {
+    padding: 16px 14px 0px 14px;
+    background-color: #41362f;
+    float: right;
+    color: #ffffff;
+    font-size: 231.25%;
+    /* margin: 5px 185px 0 0; */
+}
+
+#myBtn {
+    display: none; /* Mặc định button sẽ được ẩn*/
+    position: fixed;
+    bottom: 142px;
+    right: 440px;
+    z-index: 99; /* button được ưu tiên hiển thị đè lên các phần khác*/
+    border: none;
+    /* outline: none; */
+    /* color: white; */
+    cursor: pointer;
+    /* padding: 15px; */
+    /* border-radius: 10px; */
+    padding: 0;
+    }
+
+    /* #myBtn:hover {
+    background-color: #555;
+    } */
+
+/* ========== End small part: setting back_to_top ========== */
+
+
+
+/* xxxxxxxxxx End big part: setting main_body xxxxxxxxxx */
+
+
+/* ********** Start big part: setting more ********** */
+
+.cover_more {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    margin: 80px 0 0 0;
+}
+
+.cover_more .more {
+    width: 100%;
+    display: inline-block;
+    margin: 9px 0 9px 136px;
+}
+
+.cover_more .more a {
+    font-size: 81.25%;
+    color: #41362f;
+    margin: 0 64px 0 0;
+}
+
+.cover_more .more i.fas.fa-chevron-circle-right {
+    padding-right: 6px;
+}
+
+/* xxxxxxxxxx End big part: setting more xxxxxxxxxx */
+
+
+/* ********** Start big part: setting footer ********** */
+
+
+/* ---------- Start small part: setting contact ---------- */
+
+.cover_contact .address {
+    width: 20.5%;
+    float: left;
+    clear: both;
+    border-right: 1px solid black;
+    margin: 20px 0 0 -14px;
+}
+
+.cover_contact .address p {
+    font-size: 81.25%;
+    margin: 3px 0 0 -6px;
+}
+
+.cover_contact .subscribe {
+    width: 79.5%;
+    float: right;
+    margin: 29px -52px 0 0;
+}
+
+.cover_contact .subscribe h5 {
+    font-weight: bolder;
+    font-size: 93.75%;
+}
+
+.cover_contact .subscribe p {
+    font-size: 75%;
+}
+
+.cover_contact .subscribe p.phone {
+    margin: 10px 0 0 0;
+    width: 19%;
+    float: left;
+}
+
+.cover_contact .subscribe p.email {
+    margin: 10px 0 0 0;
+    width: 81%;
+    float: right;
+}
+
+.cover_contact .subscribe p.email a{
+    color: #597aa8;
+}
+
+/* ========== End small part: setting contact ========== */
+
+
+/* ---------- Start small part: copyright ---------- */
+
+.cover_copyright {
+    background-color: #41362f;
+    color: #ffffff;
+    font-size: 68.75%;
+    /* text-align: center; */
+    margin: 20px 0 0 0;
+}
+
+.cover_copyright p {
+    text-align: center;
+    padding: 4px 0 0 0px;
+    margin: 0 0 0 -194px;
+}
+
+/* ========== End small part: copyright ========== */
+
+
+/* xxxxxxxxxx End big part: setting footer xxxxxxxxxx */
+
+
+
+/* ====================
+setting after
+==================== */
+
+/* .main_body:after, */
+.back_to_top_button:after,
+.contact:after,
+.subscribe:after,
+.more:after,
+.one_side_item:after,
+.content_items:after,
+.item_title:after,
+.container:after,
+.cover_navigation_bar:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/* ====================
+end setting after
+==================== */
