@@ -1,0 +1,236 @@
+*{}
+/* ********** Start big part: setting sp:640px ********** */
+
+@media screen and (max-width: 641px) {
+    
+    /* ---------- Start small part: setting general ---------- */
+    .container {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 5% 0 5%;
+    }
+    /* ========== End small part: setting general ========== */
+    
+    
+    /* ---------- Start small part: setting header ---------- */
+    .header .logo {
+        width: 50%;
+        padding: 0 5%;
+        float: left;
+    }
+
+    .header .logo h1 {
+        padding-bottom: 13px;
+    }
+
+    .header .quote_search {
+        width: 50%;
+        float: right;
+        padding: 0 5%;
+    }
+
+    .header .quote_search {
+        padding: 0;
+    }
+
+    .header .quote_search .quote {
+        margin: 0;
+    }
+
+    .header .quote_search .search {
+        margin: 0;
+    }
+    /* ========== End small part: setting header ========== */
+    
+    
+    /* ---------- Start small part: setting navigation bar ---------- */
+    .cover_navigation_bar ul.sub_navigation li a {
+        padding: 10px 20px 15px 20px;
+    }
+    /* ========== End small part: setting navigation bar ========== */
+    
+    
+    /* ---------- Start small part: setting content ---------- */
+    .cover_content .content {
+        width: 60%;
+    }
+
+    .side_bar {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .cover_content .content {
+        width: 80%;
+        float: left;
+    }
+
+    .cover_content .content .our_faq {
+        border: 1px solid black;
+        /* margin: 5px 185px 0 0px; */
+        margin: 5% 0 5% 0;
+    }
+
+    .cover_content .one_item {
+        width: 100%;
+        margin: 1% 0;
+    }
+
+    .cover_content .one_item .item_title a {
+        margin: 10% -4% 0px 0px;s
+    }
+
+    .cover_content .one_item:nth-child(even) {
+        margin-right: 7px;
+    }
+
+    .cover_content .content_items {
+        margin:0;
+    }
+
+    #myBtn {
+        bottom: 35px;
+        right: 161px;
+    }
+    /* ========== End small part: setting content ========== */
+    
+    
+    /* ---------- Start small part: setting footer ---------- */
+    
+    .cover_more .more {
+        margin-left: 7%;
+    }
+    
+    .cover_contact .address {
+        width: 44%;
+    }
+
+    .cover_contact .subscribe {
+        width: 66%;
+    }
+
+    .cover_copyright p {
+        margin-left: 7%;
+    }
+
+    /* ========== End small part: setting footer ========== */
+    
+
+}
+
+/* xxxxxxxxxx End big part: setting sp:640px xxxxxxxxxx */
+
+
+
+
+/* ********** Start big part: setting table( 640px ~ 980px) ********** */
+
+@media screen and (max-width: 981px) and (min-width: 641px) {
+    /* ---------- Start small part: setting general ---------- */
+    .container {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 5% 0 5%;
+    }
+    /* ========== End small part: setting general ========== */
+    
+    
+    /* ---------- Start small part: setting header ---------- */
+    .header .logo {
+        width: 50%;
+        padding: 0 5%;
+        float: left;
+    }
+
+    .header .logo h1 {
+        padding-bottom: 13px;
+    }
+
+    .header .quote_search {
+        width: 50%;
+        float: right;
+        padding: 0 5%;
+    }
+
+    .header .quote_search {
+        padding: 0;
+    }
+
+    .header .quote_search .quote {
+        margin: 0;
+    }
+
+    .header .quote_search .search {
+        margin: 0;
+    }
+    /* ========== End small part: setting header ========== */
+    
+    
+    /* ---------- Start small part: setting navigation bar ---------- */
+    .cover_navigation_bar ul.sub_navigation li a {
+        padding: 10px 20px 15px 20px;
+    }
+    /* ========== End small part: setting navigation bar ========== */
+    
+    
+    /* ---------- Start small part: setting content ---------- */
+    .cover_content .content {
+        width: 70%;
+    }
+
+    .side_bar {
+        width: 25%;
+    }
+
+    .cover_content .one_item {
+        width: 45%;
+        margin: 15px 13px 0 0px;
+
+    }
+
+    .cover_content .one_item .item_title a {
+        margin-right: -3px ;
+    }
+
+    .cover_content .one_item:nth-child(even) {
+        margin-right: 7px;
+    }
+
+    .cover_content .content_items {
+        margin: 5% 0 0 0;
+    }
+
+    a#view_all {
+        margin-left: 72%;
+    }
+
+    #myBtn {
+        bottom: 35px;
+        right: 161px;
+    }
+    /* ========== End small part: setting content ========== */
+    
+    
+    /* ---------- Start small part: setting footer ---------- */
+    
+    .cover_more .more {
+        margin-left: 24%;
+    }
+    
+    .cover_contact .address {
+        width: 50%;
+        margin-left: 3%;
+    }
+
+    .cover_contact .subscribe {
+        width: 50%;
+    }
+
+    .cover_copyright p {
+        margin-left: 4%;
+    }
+
+    /* ========== End small part: setting footer ========== */
+}
+
+/* xxxxxxxxxx End big part: setting table( 640px ~ 980px) xxxxxxxxxx */
