@@ -1,1 +1,122 @@
 *{}
+
+/* setting body */
+body {
+    font-size: 16px;
+    font-family: "Meiryo", "メイリオ","sans-serif";
+    background-color: #ffffff;
+}
+
+.container {
+    width: 1080px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+li {
+    list-style: none;
+}
+
+/* setting header */
+
+.header_wrapper {
+    overflow: hidden;
+    max-height: 162 px;
+    border-top: 5px solid black;
+}
+
+header#header .quote_search {
+    width: 50%;
+    float: right;
+    padding-right: 95px;
+}
+
+header#header .logo {
+    width: 50%;
+    float: left;
+}
+
+header#header .logo h1 {
+    padding-top: 27px;
+    padding-bottom: 21px;
+}
+
+header#header .quote_search .quote {
+    float: right;
+    clear: both;
+    margin: 21px 233px 0 0;
+}
+
+header#header .quote_search .quote a {
+    color:#41362f;
+}
+
+header#header .quote_search .quote p {
+    display: inline-block;
+}
+
+p#get_quote {
+    font-size: 75%;
+    font-family: arial;
+    font-weight: 500;
+}
+
+header#header .quote_search .search {
+    float: right;
+    clear: both;
+    margin: -3px 91px 0 0;
+    color: #41362f;
+    border: 1px solid #41362f;
+    padding: 5px 3px 0 0;
+}
+
+header#header .quote_search .search img {
+    width: 15%;
+    margin: -3px 0px 0 -5px;
+}
+
+header#header .quote_search .search input[type="text"] {
+    border: none;
+}
+
+header#header .quote_search input[type="text"] {
+    font-size: 75%;
+    margin: -16px -8px 0 0;
+}
+
+#search_button {
+
+    float: right;
+    border: none;
+    background: #41362f;
+    color: #ffffff;
+    padding: 4px 4px 5px 5px;
+    margin: -5px -4px -1px 0px;
+}
+
+.search p {
+    float: left;
+    clear: both;
+    margin: -3px 5px -8px 4px;
+}
+
+/* end setting header */
+
+/* setting ::after */
+
+.container:after,
+.cover_navigation_bar:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/* end setting ::after */
