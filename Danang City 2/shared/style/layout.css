@@ -110,6 +110,112 @@ header#header .quote_search input[type="text"] {
 
 /* end setting header */
 
+/* setting more */
+
+.more_wrapper {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    margin: 80px 0 0 0;
+}
+
+.more_wrapper .more {
+    width: 100%;
+    display: inline-block;
+    margin: 9px 0 9px 136px;
+}
+
+.more_wrapper .more p {
+    display: inline-block;
+}
+
+.more_wrapper .more a {
+    font-size: 81.25%;
+    color: #41362f;
+    margin: -1px 64px 0 -4px;
+    display: inline-block;
+}
+
+.more_wrapper .more a img {
+    padding-right: 6px;
+}
+
+/* end setting more */
+
+/* setting footer */
+
+    /* setting contact */
+    .footer_wrapper {
+        background-color: #eee5dc;
+    }
+
+    .footer_wrapper .footer_detail {
+        padding-bottom: 19px;
+    }
+
+    .footer_wrapper .co_address {
+        width: 20.5%;
+        float: left;
+        clear: both;
+        border-right: 1px solid black;
+        margin: 20px 0 0 -14px;
+    }
+    
+    .footer_wrapper .co_address p {
+        font-size: 81.25%;
+        margin: 3px 0 0 -6px;
+    }
+    
+    .footer_wrapper .subscribe {
+        width: 79.5%;
+        float: right;
+        margin: 29px -52px 0 0;
+    }
+    
+    .footer_wrapper .subscribe h5 {
+        font-weight: bolder;
+        font-size: 93.75%;
+    }
+    
+    .footer_wrapper .subscribe p {
+        font-size: 75%;
+    }
+    
+    .footer_wrapper .subscribe p.phone {
+        margin: 10px 0 0 0;
+        width: 19%;
+        float: left;
+    }
+    
+    .footer_wrapper .subscribe p.email {
+        margin: 10px 0 0 0;
+        width: 81%;
+        float: right;
+    }
+    
+    .footer_wrapper .subscribe p.email a{
+        color: #597aa8;
+    }
+
+    /* end setting contact */
+
+    /* setting copyright */
+
+    .copyright_wrapper {
+        background-color: #41362f;
+        color: #ffffff;
+        font-size: 68.75%;
+    }
+    
+    .copyright_wrapper p {
+        text-align: center;
+        padding: 4px 0 0 0px;
+        margin: 0 0 0 -194px;
+    }
+
+    /* end setting copyright */
+
+/* end setting footer */
+
 /* setting ::after */
 
 .container:after,
