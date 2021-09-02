@@ -45,7 +45,7 @@ header#header .logo {
 }
 
 header#header .logo h1 {
-    padding-top: 27px;
+    padding-top: 29px;
     padding-bottom: 21px;
 }
 
@@ -109,6 +109,86 @@ header#header .quote_search input[type="text"] {
 }
 
 /* end setting header */
+
+/* setting navigation bar */
+
+.navigation_wrapper {
+    background-color: #41362f;
+    overflow: visible;
+    color: #ffffff;
+    height: 63px;
+}
+
+.navigation_wrapper .sub_navigation .sub_pulldown {
+    display: none;
+    z-index: 99;
+    position: absolute;
+}
+
+.navigation_wrapper ul.sub_navigation {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    float: left;
+    margin: 0 0 0 -7px;
+}
+
+.navigation_wrapper ul.sub_navigation li {
+    float: left;
+    margin: 12px 3px 4px 0px;
+    border-left: 1px solid #ffffff;
+}
+
+.navigation_wrapper ul.sub_navigation li :hover {
+    background: #87523147;
+    color: #ffffff;
+}
+
+.navigation_wrapper ul.sub_navigation li :hover .sub_pulldown {
+    display: block;
+    background: #a26e4e;
+    color: ffffff;
+}
+
+.navigation_wrapper ul.sub_navigation li :hover li {
+    border-bottom: 3px solid;
+}
+
+.navigation_wrapper ul.sub_navigation li :hover a {
+    color: ffffff;
+}
+
+.navigation_wrapper ul.sub_navigation ul.pull_down {
+    width: 210px;
+    display: inline-block;
+}
+
+.navigation_wrapper ul.sub_navigation ul.pull_down li {
+    display: inline-block;
+    border: none;
+    border-bottom: 3px solid;
+}
+
+.navigation_wrapper ul.sub_navigation li a {
+    color: #ffffff;
+    display: inline-block;
+    text-align: center;
+    font-size: 100%;
+    font-family: arial;
+    text-transform: uppercase;
+    padding: 10px 61px 15px 68px;
+}
+
+.sub_unactive {
+    margin-left: 3px;
+}
+
+div#sub_active {
+    border-bottom: 3px solid;
+}
+
+/* end setting navigation bar */
 
 /* setting more */
 
@@ -218,8 +298,10 @@ header#header .quote_search input[type="text"] {
 
 /* setting ::after */
 
+ul.pull_down:after,
+header#header:after,
 .container:after,
-.cover_navigation_bar:after {
+.navigation_wrapper:after {
     content: '';
     display: table;
     clear: both;
