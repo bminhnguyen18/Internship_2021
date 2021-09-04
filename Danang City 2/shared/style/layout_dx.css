@@ -349,14 +349,6 @@ div#sub_active {
         margin: 6px 0 0 -5px;
     }
     
-    .content_wrapper .side_bar .one_side_item i.fas.fa-caret-right {
-        float: right;
-        width: 4%;
-        color: #ffffff;
-        margin: 22px -3px 0 0;
-        font-size: 75%;
-    }
-    
     .content_wrapper .side_bar .one_side_item :hover {
         background: black;
         color: #ffffff;

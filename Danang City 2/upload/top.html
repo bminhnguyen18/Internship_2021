@@ -5,6 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Da Nang City-top</title>
+
+    <link rel="stylesheet" href="../shared/style/default.css">
+    <link rel="stylesheet" href="../shared/style/layout_top.css">
+    <link rel="stylesheet" href="../shared/style/table.css">
+    <link rel="stylesheet" href="../shared/style/smartphone.css">
+    <link rel="stylesheet" href="../shared/style/slick.css">
+
 </head>
 <body>
     <div class="wrapper_page">
@@ -18,18 +25,18 @@
                     <div class="quote_search">
                         <div class="quote">
                             <a href="#">
-                                <p><img src="../shared/images/icon/play_button.png" alt="play_button"  width="24" height="24"></p>
-                                <p>Get a Quote</p>
+                                <p><img src="../shared/images/icon/play_button.png" alt="play_button" width="24" height="24"></p>
+                                <p id="get_quote">Get a Quote</p>
                             </a>
                         </div>  <!-- end quote -->
 
                         <div class="search">
                             <form action="/action_page.php">
                                 <p>
-                                    <img src="../shared/images/icon/magnifying_glass.png" alt="magnifying glass"  width="32" height="32">
+                                    <img src="../shared/images/icon/magnifying_glass.png" alt="magnifying glass" width="32" height="32">
                                     <input type="text" placeholder="Enter your key..." name="search" >
                                 </p>
-                                <button type="submit">search</i></button>
+                                <button type="submit" id="search_button">search</i></button>
                             </form>
                         </div>  <!-- end search -->
                     </div>  <!-- end quote_search -->
@@ -164,9 +171,22 @@
             </div>  <!-- end container -->
         </div>  <!-- end navigation_wrapper -->
 
+        <div class="pastel_line"><br></div>
+
         <div class="content_wrapper">
             <div class="container">
                 <div class="content">
+
+                    <div class="photo_slide">
+                        <h2>
+                            <div class="photos">
+                                <div><p><img src="../shared/images/main/photo_slide_1.png" alt="Photo1" width="1080" height="400"></p></div>
+                                <!-- <div><p><img src="../shared/images/main/photo_slide_1.png" alt="Photo2" width="1080" height></p></div>
+                                <div><p><img src="../shared/images/main/photo_slide_1.png" alt="Photo3" width="1080" height></p></div> -->
+                            </div>
+                        </h2>
+                    </div>  <!-- end photo_slide -->
+
                     <div class="side_bar">
                         <div class="one_side_item">
                             <div class="side_item_title">
@@ -175,7 +195,7 @@
                                         <p><img src="../shared/images/icon/screen.png" alt="Screen" width="40" height="36"></p>
                                         <p>Website<br>Development</p>
                                     </h3>
-                                    <a href="#"><img src="../shared/images/icon/arrow_to_the_right.png" alt="arrow to the right" width="6" height="11"></a>
+                                    <p class="arrow"><img src="../shared/images/icon/arrow_to_the_right.png" alt="right arrow" width="6" height="11"></p>
                                 </a>
                             </div>  <!-- end side_item_title -->
                         </div>  <!-- end one_side_item -->
@@ -184,10 +204,10 @@
                             <div class="side_item_title">
                                 <a href="#">
                                     <h3>
-                                        <p><img src="../shared/images/icon/search_document.png" alt="Screen" width="36" height="40"></p>
+                                        <p><img src="../shared/images/icon/search_document.png" alt="Search document" width="36" height="40"></p>
                                         <p class="detail">Digital<br>Marketing</p>
                                     </h3>
-                                    <a href="#"><img src="../shared/images/icon/arrow_to_the_right.png" alt="arrow to the right" width="6" height="11"></a>
+                                    <p class="arrow"><img src="../shared/images/icon/arrow_to_the_right.png" alt="right arrow" width="6" height="11"></p>
                                 </a>
                             </div>  <!-- end side_item_title -->
                         </div>  <!-- end one_side_item -->
@@ -199,7 +219,7 @@
                                         <p><img src="../shared/images/icon/calendar.png" alt="Screen" width="40" height="40"></p>
                                         <p class="detail">Calendar</p>
                                     </h3>
-                                    <a href="#"><img src="../shared/images/icon/arrow_to_the_right.png" alt="arrow to the right" width="6" height="11"></a>
+                                    <p class="arrow"><img src="../shared/images/icon/arrow_to_the_right.png" alt="right arrow" width="6" height="11"></p>
                                 </a>
                             </div>  <!-- end side_item_title -->
                         </div>  <!-- end one_side_item -->
@@ -211,6 +231,7 @@
                                         <p><img src="../shared/images/icon/open_notebook.png" alt="Screen" width="40" height="32"></p>
                                         <p class="detail">Work File</p>
                                     </h3>
+                                    <p class="arrow"><img src="../shared/images/icon/arrow_to_the_right.png" alt="right arrow" width="6" height="11"></p>
                                 </a>
                             </div>  <!-- end side_item_title -->
 
@@ -222,126 +243,128 @@
                         </div>  <!-- end one_side_item -->
                     </div>  <!-- end side_bar -->
 
-                    <div class="our_faq">
-                        <div class="faq_title">
-                            <h4>Our FAQ</h4>
-                        </div>  <!-- end faq_title -->
+                    <div class="content">
+                        <div class="our_faq">
+                            <div class="faq_title">
+                                <h4>Our FAQ</h4>
+                            </div>  <!-- end faq_title -->
 
-                        <div class="faq_detail">
-                            <ul>
-                                <li><a href="#">How can i buy this headphone?</a></li>
-                                <li><a href="#">This is especially for listening to music?</a></li>
-                                <li><a href="#">How can i order it?</a></li>
-                                <li><a href="#">How can i buy this headphone?</a></li>
-                                <li><a href="#">This is especially for listening to music?</a></li>
-                            </ul>
-                            <a href="#" id="view_all"><p><img src="../shared/images/icon/play_button.png" alt="play button" width="24" height="24">View All</p></a>
-                        </div>  <!-- end faq_detail -->
-                    </div>  <!-- end our_faq -->
+                            <div class="faq_detail">
+                                <ul>
+                                    <li><a href="#">How can i buy this headphone?</a></li>
+                                    <li><a href="#">This is especially for listening to music?</a></li>
+                                    <li><a href="#">How can i order it?</a></li>
+                                    <li><a href="#">How can i buy this headphone?</a></li>
+                                    <li><a href="#">This is especially for listening to music?</a></li>
+                                </ul>
+                                <a href="#" id="view_all"><p><img src="../shared/images/icon/play_button.png" alt="play button" width="24" height="24">View All</p></a>
+                            </div>  <!-- end faq_detail -->
+                        </div>  <!-- end our_faq -->
 
-                    <div class="content_items">
-                        <div class="one_item">
-                            <div class="item_title">
-                                <h4>Web Desgin</h4>
-                                <button><p><img src="../shared/images/icon/plus_white.png" alt="icon_plus"  width="14" height="2"></p></button>
-                                <button><p><img src="../shared/images/icon/minus_white.png" alt="icon_minus" width="14" height="14"></p></button>
-                            </div>  <!-- end item_title -->
-                        
-                            <div class="item_detail">
-                                <ul>
-                                    <li><a href="#"><p><img src="../shared/images/icon/play_button.png" alt="play button" width="24" height="24">Fast connect</p></a></li>
-                                    <li><a href="#"><p><img src="../shared/images/icon/play_button.png" alt="play button" width="24" height="24">High Speaker</p></a></li>
-                                    <li><a href="#"><p><img src="../shared/images/icon/play_button.png" alt="play button" width="24" height="24">Microphone</p></a></li>
-                                    <li><a href="#"><p><img src="../shared/images/icon/play_button.png" alt="play button" width="24" height="24">Built in led</p></a></li>
-                                </ul>
-                            </div>  <!-- end item_detail -->
-                        </div>  <!-- end one_item -->
-                        
-                        <div class="one_item">
-                            <div class="item_title">
-                                <h4>Cool Ice-cream Flavors</h4>
-                                <button><p><img src="../shared/images/icon/plus_white.png" alt="icon_plus"  width="14" height="2"></p></button>
-                                <button><p><img src="../shared/images/icon/minus_white.png" alt="icon_minus" width="14" height="14"></p></button>
-                            </div>  <!-- end item_title -->
-                        
-                            <div class="item_detail">
-                                <ul>
-                                    <li><a href="#"><p><img src="../shared/images/icon/play_button.png" alt="play button" width="24" height="24">Fast connect</p></a></li>
-                                    <li><a href="#"><p><img src="../shared/images/icon/play_button.png" alt="play button" width="24" height="24">High Speaker</p></a></li>
-                                    <li><a href="#"><p><img src="../shared/images/icon/play_button.png" alt="play button" width="24" height="24">Microphone</p></a></li>
-                                    <li><a href="#"><p><img src="../shared/images/icon/play_button.png" alt="play button" width="24" height="24">Built in led</p></a></li>
-                                </ul>
-                            </div>  <!-- end item_detail -->
-                        </div>  <!-- end one_item -->
-                        
-                        <div class="one_item">
-                            <div class="item_title">
-                                <h4>Products</h4>
-                                <button><p><img src="../shared/images/icon/plus_white.png" alt="icon_plus"  width="14" height="2"></p></button>
-                                <button><p><img src="../shared/images/icon/minus_white.png" alt="icon_minus" width="14" height="14"></p></button>
-                            </div>  <!-- end item_title -->
-                        
-                            <div class="item_detail">
-                                <ul>
-                                    <li><a href="#"><p><img src="../shared/images/icon/play_button.png" alt="play button" width="24" height="24">Fast connect</p></a></li>
-                                    <li><a href="#"><p><img src="../shared/images/icon/play_button.png" alt="play button" width="24" height="24">High Speaker</p></a></li>
-                                    <li><a href="#"><p><img src="../shared/images/icon/play_button.png" alt="play button" width="24" height="24">Microphone</p></a></li>
-                                    <li><a href="#"><p><img src="../shared/images/icon/play_button.png" alt="play button" width="24" height="24">Built in led</p></a></li>
-                                </ul>
-                            </div>  <!-- end item_detail -->
-                        </div>  <!-- end one_item -->
-                        
-                        <div class="one_item">
-                            <div class="item_title">
-                                <h4>Collections</h4>
-                                <button><p><img src="../shared/images/icon/plus_white.png" alt="icon_plus"  width="14" height="2"></p></button>
-                                <button><p><img src="../shared/images/icon/minus_white.png" alt="icon_minus" width="14" height="14"></p></button>
-                            </div>  <!-- end item_title -->
-                        
-                            <div class="item_detail">
-                                <ul>
-                                    <li><a href="#"><p><img src="../shared/images/icon/play_button.png" alt="play button" width="24" height="24">Fast connect</p></a></li>
-                                    <li><a href="#"><p><img src="../shared/images/icon/play_button.png" alt="play button" width="24" height="24">High Speaker</p></a></li>
-                                    <li><a href="#"><p><img src="../shared/images/icon/play_button.png" alt="play button" width="24" height="24">Microphone</p></a></li>
-                                    <li><a href="#"><p><img src="../shared/images/icon/play_button.png" alt="play button" width="24" height="24">Built in led</p></a></li>
-                                </ul>
-                            </div>  <!-- end item_detail -->
-                        </div>  <!-- end one_item -->
+                        <div class="content_items">
+                            <div class="one_item">
+                                <div class="item_title">
+                                    <h4>Web Desgin</h4>
+                                    <button><p><img src="../shared/images/icon/plus_white.png" alt="icon_plus"  width="14" height="2"></p></button>
+                                    <button><p><img src="../shared/images/icon/minus_white.png" alt="icon_minus" width="14" height="14"></p></button>
+                                </div>  <!-- end item_title -->
+                            
+                                <div class="item_detail">
+                                    <ul>
+                                        <li><a href="#"><p><img src="../shared/images/icon/play_button.png" alt="play button" width="24" height="24">Fast connect</p></a></li>
+                                        <li><a href="#"><p><img src="../shared/images/icon/play_button.png" alt="play button" width="24" height="24">High Speaker</p></a></li>
+                                        <li><a href="#"><p><img src="../shared/images/icon/play_button.png" alt="play button" width="24" height="24">Microphone</p></a></li>
+                                        <li><a href="#"><p><img src="../shared/images/icon/play_button.png" alt="play button" width="24" height="24">Built in led</p></a></li>
+                                    </ul>
+                                </div>  <!-- end item_detail -->
+                            </div>  <!-- end one_item -->
+                            
+                            <div class="one_item">
+                                <div class="item_title">
+                                    <h4>Cool Ice-cream Flavors</h4>
+                                    <button><p><img src="../shared/images/icon/plus_white.png" alt="icon_plus"  width="14" height="2"></p></button>
+                                    <button><p><img src="../shared/images/icon/minus_white.png" alt="icon_minus" width="14" height="14"></p></button>
+                                </div>  <!-- end item_title -->
+                            
+                                <div class="item_detail">
+                                    <ul>
+                                        <li><a href="#"><p><img src="../shared/images/icon/play_button.png" alt="play button" width="24" height="24">Fast connect</p></a></li>
+                                        <li><a href="#"><p><img src="../shared/images/icon/play_button.png" alt="play button" width="24" height="24">High Speaker</p></a></li>
+                                        <li><a href="#"><p><img src="../shared/images/icon/play_button.png" alt="play button" width="24" height="24">Microphone</p></a></li>
+                                        <li><a href="#"><p><img src="../shared/images/icon/play_button.png" alt="play button" width="24" height="24">Built in led</p></a></li>
+                                    </ul>
+                                </div>  <!-- end item_detail -->
+                            </div>  <!-- end one_item -->
+                            
+                            <div class="one_item">
+                                <div class="item_title">
+                                    <h4>Products</h4>
+                                    <button><p><img src="../shared/images/icon/plus_white.png" alt="icon_plus"  width="14" height="2"></p></button>
+                                    <button><p><img src="../shared/images/icon/minus_white.png" alt="icon_minus" width="14" height="14"></p></button>
+                                </div>  <!-- end item_title -->
+                            
+                                <div class="item_detail">
+                                    <ul>
+                                        <li><a href="#"><p><img src="../shared/images/icon/play_button.png" alt="play button" width="24" height="24">Fast connect</p></a></li>
+                                        <li><a href="#"><p><img src="../shared/images/icon/play_button.png" alt="play button" width="24" height="24">High Speaker</p></a></li>
+                                        <li><a href="#"><p><img src="../shared/images/icon/play_button.png" alt="play button" width="24" height="24">Microphone</p></a></li>
+                                        <li><a href="#"><p><img src="../shared/images/icon/play_button.png" alt="play button" width="24" height="24">Built in led</p></a></li>
+                                    </ul>
+                                </div>  <!-- end item_detail -->
+                            </div>  <!-- end one_item -->
+                            
+                            <div class="one_item">
+                                <div class="item_title">
+                                    <h4>Collections</h4>
+                                    <button><p><img src="../shared/images/icon/plus_white.png" alt="icon_plus"  width="14" height="2"></p></button>
+                                    <button><p><img src="../shared/images/icon/minus_white.png" alt="icon_minus" width="14" height="14"></p></button>
+                                </div>  <!-- end item_title -->
+                            
+                                <div class="item_detail">
+                                    <ul>
+                                        <li><a href="#"><p><img src="../shared/images/icon/play_button.png" alt="play button" width="24" height="24">Fast connect</p></a></li>
+                                        <li><a href="#"><p><img src="../shared/images/icon/play_button.png" alt="play button" width="24" height="24">High Speaker</p></a></li>
+                                        <li><a href="#"><p><img src="../shared/images/icon/play_button.png" alt="play button" width="24" height="24">Microphone</p></a></li>
+                                        <li><a href="#"><p><img src="../shared/images/icon/play_button.png" alt="play button" width="24" height="24">Built in led</p></a></li>
+                                    </ul>
+                                </div>  <!-- end item_detail -->
+                            </div>  <!-- end one_item -->
 
-                        <div class="one_item">
-                            <div class="item_title">
-                                <h4>Collections</h4>
-                                <button><p><img src="../shared/images/icon/plus_white.png" alt="icon_plus"  width="14" height="2"></p></button>
-                                <button><p><img src="../shared/images/icon/minus_white.png" alt="icon_minus" width="14" height="14"></p></button>
-                            </div>  <!-- end item_title -->
-                        
-                            <div class="item_detail">
-                                <ul>
-                                    <li><a href="#"><p><img src="../shared/images/icon/play_button.png" alt="play button" width="24" height="24">Fast connect</p></a></li>
-                                    <li><a href="#"><p><img src="../shared/images/icon/play_button.png" alt="play button" width="24" height="24">High Speaker</p></a></li>
-                                    <li><a href="#"><p><img src="../shared/images/icon/play_button.png" alt="play button" width="24" height="24">Microphone</p></a></li>
-                                    <li><a href="#"><p><img src="../shared/images/icon/play_button.png" alt="play button" width="24" height="24">Built in led</p></a></li>
-                                </ul>
-                            </div>  <!-- end item_detail -->
-                        </div>  <!-- end one_item -->
+                            <div class="one_item">
+                                <div class="item_title">
+                                    <h4>Collections</h4>
+                                    <button><p><img src="../shared/images/icon/plus_white.png" alt="icon_plus"  width="14" height="2"></p></button>
+                                    <button><p><img src="../shared/images/icon/minus_white.png" alt="icon_minus" width="14" height="14"></p></button>
+                                </div>  <!-- end item_title -->
+                            
+                                <div class="item_detail">
+                                    <ul>
+                                        <li><a href="#"><p><img src="../shared/images/icon/play_button.png" alt="play button" width="24" height="24">Fast connect</p></a></li>
+                                        <li><a href="#"><p><img src="../shared/images/icon/play_button.png" alt="play button" width="24" height="24">High Speaker</p></a></li>
+                                        <li><a href="#"><p><img src="../shared/images/icon/play_button.png" alt="play button" width="24" height="24">Microphone</p></a></li>
+                                        <li><a href="#"><p><img src="../shared/images/icon/play_button.png" alt="play button" width="24" height="24">Built in led</p></a></li>
+                                    </ul>
+                                </div>  <!-- end item_detail -->
+                            </div>  <!-- end one_item -->
 
-                        <div class="one_item">
-                            <div class="item_title">
-                                <h4>Collections</h4>
-                                <button><p><img src="../shared/images/icon/plus_white.png" alt="icon_plus"  width="14" height="2"></p></button>
-                                <button><p><img src="../shared/images/icon/minus_white.png" alt="icon_minus" width="14" height="14"></p></button>
-                            </div>  <!-- end item_title -->
-                        
-                            <div class="item_detail">
-                                <ul>
-                                    <li><a href="#"><p><img src="../shared/images/icon/play_button.png" alt="play button" width="24" height="24">Fast connect</p></a></li>
-                                    <li><a href="#"><p><img src="../shared/images/icon/play_button.png" alt="play button" width="24" height="24">High Speaker</p></a></li>
-                                    <li><a href="#"><p><img src="../shared/images/icon/play_button.png" alt="play button" width="24" height="24">Microphone</p></a></li>
-                                    <li><a href="#"><p><img src="../shared/images/icon/play_button.png" alt="play button" width="24" height="24">Built in led</p></a></li>
-                                </ul>
-                            </div>  <!-- end item_detail -->
-                        </div>  <!-- end one_item -->
-                    </div>  <!-- end content_items -->
+                            <div class="one_item">
+                                <div class="item_title">
+                                    <h4>Collections</h4>
+                                    <button><p><img src="../shared/images/icon/plus_white.png" alt="icon_plus"  width="14" height="2"></p></button>
+                                    <button><p><img src="../shared/images/icon/minus_white.png" alt="icon_minus" width="14" height="14"></p></button>
+                                </div>  <!-- end item_title -->
+                            
+                                <div class="item_detail">
+                                    <ul>
+                                        <li><a href="#"><p><img src="../shared/images/icon/play_button.png" alt="play button" width="24" height="24">Fast connect</p></a></li>
+                                        <li><a href="#"><p><img src="../shared/images/icon/play_button.png" alt="play button" width="24" height="24">High Speaker</p></a></li>
+                                        <li><a href="#"><p><img src="../shared/images/icon/play_button.png" alt="play button" width="24" height="24">Microphone</p></a></li>
+                                        <li><a href="#"><p><img src="../shared/images/icon/play_button.png" alt="play button" width="24" height="24">Built in led</p></a></li>
+                                    </ul>
+                                </div>  <!-- end item_detail -->
+                            </div>  <!-- end one_item -->
+                        </div>  <!-- end content_items -->
+                    </div>
                 </div>  <!-- end content -->
 
                 <div class="go_top">
@@ -361,33 +384,37 @@
         </div>  <!-- end more_wrapper -->
 
         <div class="footer_copyright_wrapper">
-            <div class="footer_detail">
-                <div class="container">
-                    <footer id="footer">
-                        <div class="co_address">
-                            <p><img src="../shared/images/main/logo_footer.png" alt="Logo of Da Nang City page"  width="149" height="32"></p>
-                            <p>Address: Danang Software Park
-                                <br>
-                                02 Quang Trung, Da Nang, Viet Nam
-                            </p>
-                        </div>  <!-- end co_address -->
+            <div class="footer_wrapper">
+                <div class="footer_detail">
+                    <div class="container">
+                        <footer id="footer">
+                            <div class="co_address">
+                                <p><img src="../shared/images/main/logo_footer.png" alt="Logo of Da Nang City page"  width="149" height="32"></p>
+                                <p>Address: Danang Software Park
+                                    <br>
+                                    02 Quang Trung, Da Nang, Viet Nam
+                                </p>
+                            </div>  <!-- end co_address -->
 
-                        <div class="subscribe">
-                            <h5>Subscribe Now!</h5>
-                            <p class="phone">Phone: (+84) 236 779 779</p>
-                            <p class="email">Email: <a href="#">danangcity@gmail.com</a></p>
-                        </div>  <!-- end subscribe -->
-                    </footer>
-                </div>  <!-- end container -->
-            </div>  <!-- end footer_detail -->
-
-            <div class="copyright">
-                <div class="container">
-                    <div class="copyright_detail">
-                        <p>Copyright&#169; Danang city All right reserved</p>
-                    </div>  <!-- end copyright_detail -->
-                </div>  <!-- end container -->
-            </div>  <!-- end copyright -->
+                            <div class="subscribe">
+                                <h5>Subscribe Now!</h5>
+                                <p class="phone">Phone: (+84) 236 779 779</p>
+                                <p class="email">Email: <a href="#">danangcity@gmail.com</a></p>
+                            </div>  <!-- end subscribe -->
+                        </footer>
+                    </div>  <!-- end container -->
+                </div>  <!-- end footer_detail -->
+            </div>  <!-- end footer_wrapper -->
+            
+            <div class="copyright_wrapper">
+                <div class="copyright">
+                    <div class="container">
+                        <div class="copyright_detail">
+                            <p>Copyright&#169; Danang city All right reserved</p>
+                        </div>  <!-- end copyright_detail -->
+                    </div>  <!-- end container -->
+                </div>  <!-- end copyright -->
+            </div>  <!-- end copyright_wrapper -->
         </div>  <!-- end footer_copyright_wrapper -->
     </div>  <!-- end wrapper_page -->
 </body>
