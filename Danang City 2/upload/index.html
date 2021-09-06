@@ -12,6 +12,15 @@
     <link rel="stylesheet" href="../shared/style/smartphone.css">
     <link rel="stylesheet" href="../shared/style/slick.css">
 
+    <!-- add jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <!-- end add jquery -->
+
+
 </head>
 <body>
     <div class="wrapper_page">
@@ -334,5 +343,37 @@
             </div>  <!-- end copyright_wrapper -->
         </div>  <!-- end footer_copyright_wrapper -->
     </div>  <!-- end wrapper_page -->
+
+    <script>
+        window.onscroll = function() {scrollFunction()};
+        var a=300;
+        function scrollFunction()
+            {
+                vitrihientai = $(window).scrollTop();
+            console.log(vitrihientai);
+                if (document.body.scrollTop > 100 && a>=vitrihientai || document.documentElement.scrollTop > 100 && a>=vitrihientai)
+                    {
+                        document.getElementById("myBtn").style.display = "block";
+                        a=vitrihientai;
+                    }
+                else
+                    {
+                        document.getElementById("myBtn").style.display = "none";
+                        a=vitrihientai;
+                    }
+            }
+        document.getElementById('myBtn').addEventListener("click", function()
+            {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            });
+        $(window).scroll(function()
+            {
+                if($(window).scrollTop() + $(window).height() == $(document).height())
+                    {
+                        document.getElementById("myBtn").style.display = "block";
+                    }
+            });
+    </script>
 </body>
 </html>
