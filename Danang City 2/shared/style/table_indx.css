@@ -1,0 +1,120 @@
+/*setting table( 640px ~ 980px)*/
+
+@media screen and (max-width: 981px) and (min-width: 641px) {
+    /*setting general */
+    .container {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 5% 0 5%;
+    }
+    /*end setting general */
+    
+    
+    /*setting header */
+    header#header .logo {
+        width: 50%;
+        padding: 0 5%;
+        float: left;
+        margin-left: 30%;
+    }
+
+    header#header .logo h1 {
+        padding-bottom: 13px;
+    }
+
+    header#header .quote_search {
+        display: none;
+    }
+    /* end setting header */
+    
+    
+    /*setting navigation bar */
+    .navigation_wrapper ul.sub_navigation li a {
+        padding: 10px 20px 15px 20px;
+    }
+
+    .navigation_wrapper ul.sub_navigation li:not(:first-child) {
+        display: none;
+    }
+
+    .navigation_wrapper ul.sub_navigation .icon {
+        float: right;
+        display: block;
+        padding: 17% 0 0 0;
+    }
+
+    .navigation_wrapper ul.sub_navigation.responsive {
+        position: relative;
+    }
+
+    .navigation_wrapper ul.sub_navigation.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .navigation_wrapper ul.sub_navigation.responsive li {
+        float: none;
+        display: block;
+        text-align: left;
+        background: #41362f;
+    }
+
+    .navigation_wrapper ul.sub_navigation li :hover {
+        display: none;
+    }
+
+    /* end setting navigation bar*/
+    
+    
+    /* setting content */
+    .content_wrapper .content {
+        width: 65%;
+    }
+
+    .side_bar {
+        width: 32%;
+    }
+
+    .content_wrapper .one_item {
+        width: 100%;
+    }
+
+    .content_wrapper .one_item:nth-child(even) {
+        margin-right: 7px;
+    }
+
+    .content_wrapper .content_items {
+        margin: -33px 9px 0 -5px;
+    }
+
+    #myBtn {
+        bottom: 35px;
+        right: 161px;
+    }
+    /* end setting content */
+    
+    
+    /* setting footer */
+    
+    .cover_more .more {
+        margin-left: 24%;
+    }
+    
+    .footer_wrapper .co_address {
+        width: 50%;
+        margin-left: 3%;
+    }
+
+    .footer_wrapper .subscribe {
+        width: 50%;
+    }
+
+    .footer_copyright_wrapper p {
+        margin-left: 4%;
+    }
+
+    /* end setting footer */
+}
+
+/*end setting table( 640px ~ 980px)*/

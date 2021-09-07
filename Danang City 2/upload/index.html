@@ -8,9 +8,11 @@
 
     <link rel="stylesheet" href="../shared/style/default.css">
     <link rel="stylesheet" href="../shared/style/layout_dx.css">
-    <link rel="stylesheet" href="../shared/style/table.css">
-    <link rel="stylesheet" href="../shared/style/smartphone.css">
+    <link rel="stylesheet" href="../shared/style/table_indx.css">
+    <link rel="stylesheet" href="../shared/style/smartphone_indx.css">
     <link rel="stylesheet" href="../shared/style/slick.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- add jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -56,12 +58,13 @@
         <div class="navigation_wrapper">
             <div class="container">
                 <nav id="nav">
-                    <ul class="sub_navigation">
+                    <ul class="sub_navigation" id="sub_navigation_1">
                         <li>
                             <div class="sub_active" id="sub_active">
                                 <a href="#">Home</a>
                             </div>  <!-- end sub_active -->
                         </li>
+
                         <li>
                             <div class="sub_unactive">
                                 <a href="#">About Us</a>
@@ -119,6 +122,7 @@
                                 </div>  <!-- end sub_pulldown -->
                             </div>  <!-- end sub_unactive -->
                         </li>
+
                         <li>
                             <div class="sub_unactive">
                                 <a href="#">Blog</a>
@@ -147,6 +151,7 @@
                                 </div>  <!-- end sub_pulldown -->
                             </div>  <!-- end sub_unactive -->
                         </li>
+
                         <li>
                             <div class="sub_unactive">
                                 <a href="#">Contact</a>
@@ -175,6 +180,10 @@
                                 </div>  <!-- end sub_pulldown -->
                             </div>  <!-- end sub_unactive -->
                         </li>
+
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                            <i class="fa fa-bars"></i>
+                        </a>
                     </ul>   <!-- end sub_navigation -->
                 </nav>  <!-- end nav -->
             </div>  <!-- end container -->
@@ -374,6 +383,17 @@
                         document.getElementById("myBtn").style.display = "block";
                     }
             });
+    </script>
+
+<script>
+    function myFunction() {
+      var x = document.getElementById("sub_navigation_1");
+      if (x.className === "sub_navigation") {
+        x.className += " responsive";
+      } else {
+        x.className = "sub_navigation";
+      }
+    }
     </script>
 </body>
 </html>

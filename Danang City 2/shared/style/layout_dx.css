@@ -192,6 +192,18 @@ div#sub_active {
     border-bottom: 3px solid;
 }
 
+.navigation_wrapper ul.sub_navigation .icon {
+    display: none;
+}
+
+.navigation_wrapper ul.sub_navigation .icon {
+    color: #ffffff;
+}
+
+.navigation_wrapper ul.sub_navigation i.fa.fa-bars {
+    margin-top: 2%;
+}
+
 /* end setting navigation bar */
 
 /* setting content */
