@@ -31,6 +31,7 @@ li {
     overflow: hidden;
     max-height: 162 px;
     border-top: 5px solid black;
+    margin-bottom: -2px;
 }
 
 #header .quote_search {
@@ -52,15 +53,17 @@ li {
 #header .quote_search .quote {
     float: right;
     clear: both;
-    margin: 21px 233px 0 0;
+    margin: 13px 236px 0 0;
 }
 
 #header .quote_search .quote a {
     color:#41362f;
+    font-size: 12px;
 }
 
 #header .quote_search .quote p {
     display: inline-block;
+    margin: 0px -9px 0 0;
 }
 
 p#get_quote {
@@ -72,23 +75,27 @@ p#get_quote {
 .search {
     display: inline-block;
     border: 1px solid black;
+    overflow: hidden;
+    margin: 6px 0 0 123px;
 }
 
 form {
-    margin: -1px 0 -8px 0;
+    margin: -1px -1px -15px 0;
 }
 
 input[type="submit"] {
-    margin: -30px 0 0 0;
+    margin: -32px 0 0 7px;
     border: none;
     background-color: #41362f;
     color: #ffffff;
-    padding: 6px 0 0 0;
+    padding: 5px 6px 6px 5px;
+    font-size: 12px;
 }
 
 input#search_key {
-    margin: -30px 0 0 0;
+    margin: -30px -7px 0 -8px;
     border: none;
+    font-size: 12px;
 }
 
 .search p {
@@ -98,45 +105,6 @@ input#search_key {
 input#search_key {
     display: inline-block;
 }
-
-/* #header .quote_search .search {
-    float: right;
-    clear: both;
-    margin: -3px 91px 0 0;
-    color: #41362f;
-    border: 1px solid #41362f;
-    padding: 5px 3px 0 0;
-}
-
-#header .quote_search .search img {
-    width: 15%;
-    margin: -3px 0px 0 -5px;
-}
-
-#header .quote_search .search input[type="text"] {
-    border: none;
-}
-
-#header .quote_search input[type="text"] {
-    font-size: 75%;
-    margin: -16px -8px 0 0;
-}
-
-#search_button {
-
-    float: right;
-    border: none;
-    background: #41362f;
-    color: #ffffff;
-    padding: 4px 4px 5px 5px;
-    margin: -5px -4px -1px 0px;
-}
-
-.search p {
-    float: left;
-    clear: both;
-    margin: -3px 5px -8px 4px;
-} */
 
 /* end setting header */
 
