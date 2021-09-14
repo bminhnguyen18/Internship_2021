@@ -215,6 +215,14 @@ div#sub_active {
 
     /* setting .content_items */
 
+        /* setting photo slide */
+
+        .box_mainvisual.slick-initialized.slick-slider.slick-dotted {
+            width: 83.5%;
+            margin: 25px 0 0 -7px;
+
+        /* end setting photo slide */
+
     .content_wrapper .content_of_top .our_faq {
         width: 61.9%;
         float: left;
