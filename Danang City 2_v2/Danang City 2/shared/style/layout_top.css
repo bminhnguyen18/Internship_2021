@@ -195,7 +195,7 @@ div#sub_active {
 #sidebar {
     float: left;
     width: 19.4%;
-    margin: -6px 30px 0 -7px;
+    margin: 7px 21px 0 -7px;
     background-color: #eee5dc;
 }
 #content {
@@ -223,43 +223,48 @@ main#main_content {
 
         /* end setting photo slide */
 
-    .content_wrapper .content_of_top .our_faq {
-        width: 61.9%;
-        float: left;
+    .box_our_faq {
+        width: 77.9%;
+        /* float: left; */
         border: 1px solid black;
-        margin: 17px 0 -30px 24px;
+        margin: 8px 0 -30px 4px;
     }
 
     
-    .content_wrapper .content_of_top .faq_title {
+    .box_our_faq .our_faq_title {
         border-bottom: 1px solid black;
         background-color: #41362f;
+        margin-left: -1px;
     }
 
-    .content_wrapper .content_of_top .faq_title h4 {
+    .box_our_faq .our_faq_title h2 {
         color: #41362f;
         background-color: #eee5dc;
         margin: 0 0 0 8px;
         font-weight: bold;
         font-size: 19px;
-        padding: 10px 0 10px 0;
+        padding: 10px 0 10px 15px;
     }
 
-    .content_wrapper .content_of_top .faq_detail li {
+    .box_our_faq .our_faq_content .our_faq_list {
+        margin: 0 24px 0 37px;
+    }
+
+    .box_our_faq .our_faq_content .our_faq_list li {
         list-style-type: disc;
         font-size: 14px;
         border-bottom: 1px dotted black;
-        padding: 8px 0 5px 0;
+        padding: 14px 0 5px 0;
     }
     
     .content_wrapper .content_of_top .faq_detail ul {
         margin: 6px 24px 0 33px;
     }
 
-    a#view_all {
+    .our_faq_readmore p {
         float: right;
         padding: 0 51px 11px 0;
-        margin: -2px 0 0 0;
+        margin: 13px 0 2px 0;
         font-size: 14px;
     }
     
@@ -368,13 +373,6 @@ main#main_content {
     /* end setting .content_items */
 
     /* setting side_bar */
-    /* .side_bar {
-        width: 19.4%;
-        float: left;
-        margin: 18px 0 0 0;
-        padding-bottom: 13px;
-        background-color: #eee5dc;
-    } */
     
     .leftnavi_list li {
         border: 1px solid black;
@@ -565,6 +563,7 @@ main#main_content {
 
 /* setting ::after */
 
+.our_faq_readmore:after,
 .left_nav_title_group:after,
 .side_item_title a:after,
 .content_items:after,
