@@ -569,6 +569,7 @@ main#main_content {
 
 /* setting ::after */
 
+.one_row:after,
 .our_faq_readmore:after,
 .left_nav_title_group:after,
 .side_item_title a:after,
