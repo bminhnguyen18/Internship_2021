@@ -38,13 +38,14 @@
     }
 
     .navigation_wrapper ul.sub_navigation .icon {
-        float: right;
+        float: left;
         display: block;
-        padding: 17% 0 0 0;
+        padding: 2% 0 0 0;
     }
 
     .navigation_wrapper ul.sub_navigation.responsive {
         position: relative;
+        z-index: 99;
     }
 
     .navigation_wrapper ul.sub_navigation.responsive .icon {
@@ -63,7 +64,6 @@
     .navigation_wrapper ul.sub_navigation li :hover {
         display: none;
     }
-
     /* end setting navigation bar*/
     
     
@@ -90,15 +90,15 @@
 
     #myBtn {
         bottom: 35px;
-        right: 161px;
+        right: 0;
     }
     /* end setting content */
     
     
     /* setting footer */
-    
-    .cover_more .more {
-        margin-left: 24%;
+
+    .more_wrapper .more {
+        margin-left: 11%;
     }
     
     .footer_wrapper .co_address {
@@ -170,13 +170,14 @@
     }
 
     .navigation_wrapper ul.sub_navigation .icon {
-        float: right;
+        float: left;
         display: block;
-        padding: 17% 0 0 0;
+        padding: 2% 0 0 0;
     }
 
     .navigation_wrapper ul.sub_navigation.responsive {
         position: relative;
+        z-index: 99;
     }
 
     .navigation_wrapper ul.sub_navigation.responsive .icon {
@@ -222,20 +223,24 @@
 
     #myBtn {
         bottom: 35px;
-        right: 161px;
+        right: 0;
     }
 
     .side_bar {
         float: right;
         margin: 0;
     }
+
+    #sidebar {
+        width: 88%;
+    }
     /* end setting content */
     
     
     /* setting footer */
-    
+
     .more_wrapper .more {
-        margin: 0 8%;
+        margin-left: 0;
     }
     
     .cover_more .more {

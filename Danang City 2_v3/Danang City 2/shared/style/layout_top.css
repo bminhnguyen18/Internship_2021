@@ -144,7 +144,7 @@ li {
 }
 .navigation_wrapper ul.sub_navigation li :hover .sub_pulldown {
     display: block;
-    background: #a26e4e;
+    background: #41362fd6;
     color: #ffffff;
 }
 
@@ -162,9 +162,13 @@ li {
 }
 
 .navigation_wrapper ul.sub_navigation ul.pull_down li {
-    display: inline-block;
-    border: none;
-    border-bottom: 3px solid;
+    color: #ffffff;
+    display: block;
+    text-align: center;
+    font-size: 112.5%;
+    text-transform: uppercase;
+    padding: 10px;
+    position: relative;
 }
 
 .navigation_wrapper ul.sub_navigation ul.pull_down li:last-child {

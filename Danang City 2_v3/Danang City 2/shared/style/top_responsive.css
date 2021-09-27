@@ -38,9 +38,9 @@
     }
 
     .navigation_wrapper ul.sub_navigation .icon {
-        float: right;
+        float: left;
         display: block;
-        padding: 17% 0 0 0;
+        padding: 2% 0 0 0;
     }
 
     .navigation_wrapper ul.sub_navigation.responsive {
@@ -77,36 +77,21 @@
         width: 99%;
     }
 
-    .box_media .media_list .media_item {
-        width: 99%;
-    }
-
-    div#special_media_item {
-        margin: 46px 13px 0 4px;
+    .media_list >li {
+        width: 100%;
     }
 
     #myBtn {
         bottom: 35px;
-        right: 161px;
-    }
-
-    
-    span.media_show_btn1 {
-        margin: -64px 0px 0 0;
-        padding: 21px 0px 20px 5px;
-    }
-
-    span.media_show_btn3 {
-        margin: -64px 0px 0 0;
-        padding: 21px 0px 20px 5px;
+        right: 0;
     }
     /* end setting content */
     
     
     /* setting footer */
-    
-    .cover_more .more {
-        margin-left: 24%;
+
+    .more_wrapper .more {
+        margin-left: 11%;
     }
     
     .footer_wrapper .co_address {
@@ -178,9 +163,9 @@
     }
 
     .navigation_wrapper ul.sub_navigation .icon {
-        float: right;
+        float: left;
         display: block;
-        padding: 17% 0 0 0;
+        padding: 2% 0 0 0;
     }
 
     .navigation_wrapper ul.sub_navigation.responsive {
@@ -223,29 +208,13 @@
         margin-top: 7px;
     }
 
-    .box_media .media_list .media_item {
-        width: 99%;
-        margin: 46px 13px 0 4px;
-    }
-
-    div#special_media_item {
-        margin: 46px 13px 0 4px;
+    .media_list >li {
+        width: 100%;
     }
 
     #myBtn {
         bottom: 35px;
-        right: 161px;
-    }
-
-    
-    span.media_show_btn1 {
-        margin: -64px 0px 0 0;
-        padding: 21px 0px 20px 5px;
-    }
-
-    span.media_show_btn3 {
-        margin: -64px 0px 0 0;
-        padding: 21px 0px 20px 5px;
+        right: 0;
     }
 
     /* end setting content */
@@ -254,7 +223,7 @@
     /* setting footer */
     
     .more_wrapper .more {
-        margin: 0 8%;
+        margin-left: 0;
     }
     
     .cover_more .more {
